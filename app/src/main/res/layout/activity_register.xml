@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".Register">
+
+
+
+    <TextView
+        android:id="@+id/textViewE"
+        android:layout_width="wrap_content"
+        android:layout_height="139dp"
+        android:layout_above="@id/scrollView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+
+        android:text="Welcome to E-Farming project"
+        android:textColor="#FFFF"
+        android:textSize="20dp"></TextView>
+
+    <ScrollView
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/Register"
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <EditText
+
+                    android:textColor="#FFFF"
+                    android:id="@+id/Name"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:background="#11000000"
+                    android:ems="10"
+                    android:hint="Username"
+                    android:textColorHint="#FFFF"
+                    android:inputType="textPersonName"
+                    android:textSize="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_above="@+id/email"
+                    android:layout_centerHorizontal="true" />
+                <EditText
+
+                    android:textColor="#FFFF"
+                    android:id="@+id/email"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:background="#11000000"
+                    android:ems="10"
+                    android:hint="E-mail"
+                    android:textColorHint="#FFFF"
+                    android:inputType="textEmailAddress"
+                    android:textSize="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_above="@+id/pass"
+                    android:layout_centerHorizontal="true"></EditText>
+
+                <EditText
+                    android:textColor="#FFFF"
+                    android:id="@+id/pass"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:background="#11000000"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:textColorHint="#FFFF"
+                    android:inputType="textPassword"
+                    android:layout_marginBottom="15dp"
+                    android:layout_alignBottom="@+id/Register"
+                    android:layout_above="@+id/phone"
+                    android:layout_centerHorizontal="true" />
+                <EditText
+                    android:textColor="#FFFF"
+                    android:id="@+id/phone"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:background="#11000000"
+                    android:ems="10"
+                    android:hint="Your Phone number"
+                    android:textColorHint="#FFFF"
+                    android:inputType="phone"
+                    android:layout_above="@id/Register"
+                    android:layout_marginBottom="15dp"
+                    android:layout_alignBottom="@id/pin"
+                    android:layout_alignLeft="@+id/Name"
+                    android:layout_alignStart="@+id/Name" />
+                <EditText
+                    android:textColor="#FFFF"
+                    android:id="@+id/state"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:background="#11000000"
+                    android:ems="10"
+                    android:hint="State"
+                    android:textColorHint="#FFFF"
+                    android:inputType="text"
+                    android:textSize="16dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_above="@id/pin"
+                    android:layout_centerHorizontal="true">
+                </EditText>
+                <EditText
+                    android:textColor="#FFFF"
+                    android:id="@+id/pin"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:background="#11000000"
+                    android:ems="10"
+                    android:hint="PIN address"
+                    android:textColorHint="#FFFF"
+                    android:inputType="number"
+                    android:textSize="16dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_above="@id/Register"
+                    android:layout_centerHorizontal="true">
+                </EditText>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/Register"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"
+        android:elevation="10dp"
+        android:onClick="Register"
+        android:text="Register "></Button>
+
+    <TextView
+        android:id="@+id/login"
+        android:clickable="true"
+        android:textColor="#FFFF"
+        android:textSize="15dp"
+        android:onClick="onClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:id="@+id/linearLayout"
+        >
+
+
+    </LinearLayout>
+</RelativeLayout>
+
+
+

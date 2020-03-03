@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/qw"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".requestService">
+
+    <TextView
+
+        android:id="@+id/text"
+        android:layout_width="225dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="21dp"
+        android:background="@drawable/qw1"
+        android:shadowColor="@color/str4"
+        android:text="Proceed to Checkout"
+        android:textColor="#FFFFFF "
+        android:textSize="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="308dp"
+        android:layout_height="508dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/qw1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:shadowColor="@color/str4"
+                android:text="Thank you "
+                android:textColor="#FFFFFF "
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></TextView>
+
+            <TextView
+
+                android:id="@+id/order"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:shadowColor="@color/str4"
+                android:text="You have ordered for "
+                android:textColor="#FFFFFF "
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:shadowColor="@color/str4"
+                android:text="Please select the amount  :"
+                android:textColor="#FFFFFF "
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:shadowColor="@color/str4"
+                android:textColor="#FFFFFF ">
+
+                <Button
+                    android:id="@+id/decre"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:onClick="decre"
+                    android:text="-"
+                    android:textSize="25dp"></Button>
+
+                <TextView
+
+                    android:id="@+id/howMuch"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:shadowColor="@color/str4"
+                    android:text="0"
+                    android:textColor="#FFFFFF "
+                    android:textSize="25dp"></TextView>
+
+                <Button
+                    android:id="@+id/incre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:onClick="incre"
+                    android:text="+"
+                    android:textSize="25dp"></Button>
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:shadowColor="@color/str4"
+                    android:text="KG"
+                    android:textColor="#FFFFFF "
+                    android:textSize="25dp"></TextView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></TextView>
+
+            <TextView
+                android:id="@+id/price"
+                android:text="Total amount you have to pay : "
+                android:textColor="#FFFF"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"></TextView>
+
+            <TextView
+                android:id="@+id/yourNumber"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="17dp"
+                android:background="#1ABC9C"
+                android:hint="Your phone number is "
+                android:inputType="phone"
+                android:textColor="#FFFF"
+                android:textColorHint="#FFFF"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></TextView>
+
+            <TextView
+                android:id="@+id/yourPIN"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#1ABC9C"
+                android:hint="Your PIN address "
+                android:textSize="17dp"
+                android:inputType="number"
+                android:textColor="#FFFF"
+                android:textColorHint="#FFFF"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></TextView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="proceed"
+                android:text="::::: Proceed ::::::"
+                android:textStyle="bold"></Button>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

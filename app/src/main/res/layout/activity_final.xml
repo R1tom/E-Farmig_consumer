@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/final_back"
+    tools:context=".Final">
+
+    <ImageView
+
+        android:onClick="cancel"
+        android:id="@+id/cancelBu"
+        android:layout_width="123dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="358dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:src="@drawable/fial"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"></ImageView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="96dp"
+        android:text="Click the circle to cancel the order"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cancelBu" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="126dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="236dp"
+        android:layout_marginEnd="49dp"
+        android:text="Logout"
+        android:onClick="logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <Button
+        android:id="@+id/goBack"
+        android:layout_width="207dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="200dp"
+        android:onClick="setGoBack"
+        android:text="Go back to dashboard"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
